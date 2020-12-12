@@ -1,0 +1,21 @@
+version: '2'
+services:
+  client:
+    container_name: 'web_client'
+    build: ./client
+    ports:
+      - '80:80'
+    depends_on:
+      - api
+  api:
+    container_name: 'backend'
+    build: ./api
+    ports:
+      - '8080:8080'
+    depends_on:
+      - mongo
+  mongo:
+    container_name: 'database'
+    image: mongo
+    ports:
+      - '27017:27017'

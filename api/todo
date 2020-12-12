@@ -1,0 +1,6 @@
+ToDo Web Srapping:
+    1 - Tratar dado HTML;
+    2 - Criar esquema no banco;
+    3 - Popular banco com dados tratados;
+    4 - Criar rota para consumir dados salvos no banco;
+    5 - Consumir rota com Google Sheets;
